@@ -15,6 +15,8 @@
 
 //1. Podprogram
 
+using System.Runtime.InteropServices;
+
 static int pocetPrvku(int pocet)
 {
     int[] pole1 = new int[] { 1, 5, 6, 8, 9 };
@@ -24,9 +26,72 @@ static int pocetPrvku(int pocet)
 
 //2. Podprogram
 
-static int maxPocetSeznamu(int max)
+static int najdiMax(int[] arr)
 {
-    int[] pole2 = new int[] { 5, 6, 100, 200, 300, 402, 7, 8 };
 
+    int max = arr[0];  
+
+    foreach (int num in arr)
+    {
+        if (num > max)
+        {
+            max = num;  
+        }
+    }
+
+    return max;
 }
 
+
+//3. Podprogram
+
+
+static int najdiMin(int minimum)
+{
+    int[] pole3 = new int[] { 1, 2, 3, 5, 8, 9, 55 };
+    int min = pole3.Min();
+    return minimum;
+}
+
+
+//4. Podprogram
+
+static int soucetHodnot(int vysledek)
+{
+    int[] pole4 = { 1, 3, 5, 8 };
+    int soucet = pole4.Sum();
+    return soucet;
+}
+
+//5. Podprogram
+
+
+static int soucinHodnot(int vysledek2)
+{
+    int[] pole5 = { 1, 3, 8, 7, 4, 5, 6, 2, 1, 3 };
+    int soucin = 0;
+    foreach (int num in pole5)
+    {
+        soucin *= num;
+
+    }
+    return soucin;
+}
+
+
+
+//6. Podprogram
+
+static int aritMetickyPrumer(int vysledek3)
+{
+    double[] pole6 = { 1, 3, 5, 6, 8, 6, 7, 9, 2, 3, 45 };
+    double prumer = pole6.Average();
+    return (int)prumer;
+}
+
+
+// 7. Podprogram
+static int geometrickyPrume(int vysledek4)
+{
+    return null;
+}
